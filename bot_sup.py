@@ -28,10 +28,6 @@ async def tes(ctx, *args):
     await ctx.send(f'{len(args)} arguments: {arguments}')
 
 @bot.command()
-async def help(ctx):
-    await ctx.send("Los comandos que se pueden usar son:")
-    
-@bot.command()
 async def add(ctx, left: int, right: int):
     """Adds two numbers together."""
     await ctx.send(left + right)
